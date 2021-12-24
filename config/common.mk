@@ -44,7 +44,11 @@ PRODUCT_COPY_FILES += \
 
 # PixelPropsUtils
 PRODUCT_COPY_FILES += \
-    vendor/dot/prebuilt/common/etc/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+    vendor/aosp/prebuilt/common/etc/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+
+# Custom Icon Overlay
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/product/overlay/ThemedIconsOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/ThemedIconsOverlay.apk
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
